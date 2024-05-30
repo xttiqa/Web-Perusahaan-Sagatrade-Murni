@@ -1,0 +1,1486 @@
+:root {
+    --warna-bayangan: 0px 0px 8px rgba(110, 82, 59, .2);
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(51, 51, 51);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(236, 201, 0);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(172, 146, 0);
+}
+
+/*NAVBAR*/
+.nvbr {
+    top: 0px;
+    position: sticky;
+    z-index: 3;
+    box-shadow: 0px 5px 25px rgb(53, 53, 53);
+}
+
+.img-logo {
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.div-logo {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    background-color: rgb(255, 248, 219);
+}
+
+.nama-logo {
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.a-nama-logo {
+    text-decoration: none;
+    color: black;
+}
+
+.a-nama-logo:active {
+    color: black;
+}
+
+.icon-bars {
+    display: none;
+}
+
+.ul-nav {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    float: right;
+    margin-top: -63px;
+}
+
+.a-nav .li-nav {
+    list-style: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    padding: 18px 70px;
+    background-color: yellow;
+    color: black;
+    font-weight: 700;
+    transition: color ease-out .2s;
+}
+
+.a-nav .li-nav:hover {
+    transition: background-color ease-out .2s;
+    background-color: #bdbd00;
+    color: white;
+}
+
+.a-nav .li-nav:active {
+    color: black;
+    transition: color ease-out .2s;
+} 
+
+.btn {
+    background-color: rgb(243, 54, 54) !important;
+    color: white !important;
+    border: 0px;
+}
+
+.btn:focus {
+    background-color: #b80606 !important;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(243, 54, 54) !important;
+    color: white !important;
+}
+
+.dropdown-item:active {
+    background-color: #b80606 !important;
+    color: white !important;
+}
+
+/*HOME*/
+/*CONTAINER*/
+/* .container {
+}
+
+.background-cntr {
+    background-image: url('../images/Banner-Our-solution.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    filter: brightness(55%);
+    z-index: -1;
+}
+
+.judul-cntr {
+    position: absolute;
+    top: 43%;
+    left: 25%;
+    width: 50%;
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 30px;
+    animation: tampiljudul 1.5s;
+}
+
+@keyframes tampiljudul {
+    from {top: 30%;}
+    to {top: 43%;}
+  }
+
+.isi-cntr {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    max-width: 50%;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 30px;
+    animation: tampilisijudul 1.5s;
+}
+
+@keyframes tampilisijudul {
+    from {left: 43%;}
+    to {left: 25%;}
+  } */
+
+/*ABOUT SAGA*/
+.home {
+    width: 75%;
+    margin: 45px auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo-about {
+    display: block;
+    width: 300px;
+    position: absolute;
+    z-index: -1;
+    top: 25px;
+    right: 30px;
+    opacity: 0.2;
+}
+
+.sub-home {
+    padding: 20px;
+    
+}
+
+.about, .about-saga, .isi-about {
+    padding: 5px;
+}
+
+.about {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ce1212;
+}
+
+.about-saga {
+    font-size: 37px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.isi-about {
+    line-height: 32px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/*DATA NUMBER*/
+.data-nmbr {
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.ul-dn {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 50px;
+}
+
+.ul-dn .li-dn {
+    display: inline-block;
+    list-style: none;
+    padding: 50px 30px;
+    border-radius: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 10px black;
+}
+
+.ul-dn .li-dn .number-dn {
+    font-size: 70px;
+    font-weight: 700;
+    color: #ce1212;
+    animation: ubahwarna 3s infinite;
+}
+
+@keyframes ubahwarna {
+    0%   {color: #ce1212}
+    25%  {color: rgb(173, 19, 19)}
+    50%  {color: #ce1212}
+    75%  {color: red}
+    100% {color: #ce1212}
+}
+
+.ul-dn .li-dn .text-dn {
+    font-size: 21px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/*CIRCLE*/
+
+/*FOOTER*/
+.footer {
+    padding: 25px;
+    background-color: rgb(200, 238, 255);
+    text-align: center;
+}
+
+.isi-footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*PROFILE*/
+.profil {
+    position: relative;
+    z-index: 2;
+}
+
+.table-profil {
+    margin: 40px 250px;
+}
+
+.logo-profil {
+    position: absolute;
+    top: 23vh;
+    z-index: -1;
+    width: 450px;
+    top: 5vh;
+    right: 25vh;
+    opacity: 0.2;
+}
+
+.profil-res {
+    display: none;
+}
+
+.th-profil {
+    text-align: center;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    padding-bottom: 20px;
+    animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+    0%   {color: black}
+    25%  {color: rgb(145, 145, 145)}
+    50%  {color: rgb(243, 54, 54)}
+    75%  {color: rgb(145, 145, 145)}
+    100% {color: black}
+}
+
+.visi, .misi {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.isi-misi, .isi-visi {
+    line-height: 32px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+#isi-vm,  .td-profil {
+    padding: 20px;
+}
+
+.visi {
+    padding-bottom: 10px;
+}
+
+/*CONTACT*/
+.contact {
+    padding: 0px;
+    margin: 0px;
+}
+
+.cntr-cn {
+    padding: 25px;
+}
+
+.t-cntr-cn {
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding-left: 90vh;
+    padding-bottom: 20px;
+}
+
+.about-contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2px auto;
+}
+
+.sub-contact .tmpt-cn {
+    align-items: center;
+    width: 100%;
+}
+
+.sub-contact {
+    margin: 10px;
+}
+
+.sub-contact > .v1 {
+    display: block;
+    border-left: 4px solid #b80606;
+    height: 300px;
+}
+
+.alamat, .no-hp {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    line-height: 25px;
+}
+
+.alamat {
+    vertical-align: middle;
+}
+
+.icon-c {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 10px;
+}
+
+.contact-notice {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: gray;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-style:italic;
+    margin: auto;
+
+}
+
+.table-contact, .td-isi-form {
+    padding: 10px;
+}
+
+.table-contact {
+    margin: 75px auto;
+}
+
+.judul-contact {
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+label {
+    font-size: 22px;
+    color: rgb(133, 133, 133);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+.send {
+    font-size: 18px;
+    padding: 10px;
+    width: 150px;
+    background-color: #df1717;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 25px;
+    margin-bottom: 12px;
+}
+
+.reset {
+    font-size: 18px;
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(133, 133, 133);
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 25px;
+    float: right;
+    cursor: pointer;
+}
+
+.send:hover {
+    background-color: #970f0f;
+}
+
+.reset:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+input:focus {
+    background-color: #dfdfdf;
+}
+
+textarea {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+::placeholder {
+    color: rgb(179, 179, 179);
+}
+
+/*PRODUCTS*/
+.card {
+    position: relative;
+    width: 50%;
+    padding: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(243, 54, 54);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: default;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    text-align: left;
+    font-size: 17.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.products, .judul-kecil, .judul-besar {
+    border: 0px solid;
+}
+
+.judul-kecil, .judul-besar {
+    padding: 5px;
+}
+
+.products {
+    padding: 50px 150px;
+}
+
+.judul-kecil {
+    font-size: 19px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ce1212;
+}
+
+.judul-besar {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ul-pro {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.li-pro {
+    margin: 0px 10px;
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    list-style: none;
+    border-radius: 10px;
+    border: 1px solid gray;
+    justify-content: flex-end;
+    padding:20px 0px;
+    height: 50vh;
+    transition-duration: .5s;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    cursor: default;
+}
+
+.li-pro:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0px 0px 15px black;
+}
+
+.li-pro:not(:hover) {
+    transform: scale(1);
+}
+
+.li-pro > .judul-pro{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-weight: 700;
+    top: 20px;
+    left: 10px;
+    font-size: 30px;
+    
+    /* transform: rotate(-45deg); */
+}
+
+.li-pro > .desc-pro{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    position: absolute;
+    width: 180px;
+    top: 65px;
+    left: 10px;
+    font-size: 16px;
+}
+
+.li-pro #hanger-photo {
+    z-index: -1;
+}
+
+.li-pro img{
+    width: 260px;
+    background-size: contain;
+}
+
+.li-pro #packer-photo {
+    transform: rotate(-90deg)
+
+}
+.li-pro #valve-photo {
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.bag-sert {
+    padding: 30px 80px;
+}
+
+.judul-sert {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.hr-sert {
+    border: 2px solid black;
+}
+
+.isi-sert ul {
+    padding: 0px;
+    text-align: center;
+}
+
+.isi-sert ul li {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    list-style: none;
+    vertical-align: top;
+}
+
+.isi-sert ul li .nama-sert{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.isi-sert ul li img {
+    height: 400px;
+    box-shadow: 5px 5px 10px black;
+    transition-duration: .8s;
+}
+
+.isi-sert #sert-ls{
+    height: 250px;
+}
+
+.isi-sert ul li img:hover {
+    transform: translate(10px, 10px);
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 20px black;
+}
+
+.card:hover {
+    z-index: 1 !important;
+    transform: scale(1.05) !important;
+    transition-duration: 0.3s !important;
+    box-shadow: 0px 0px 20px black !important;
+    cursor: pointer;
+}
+
+/*LIST CONTACT*/
+.list-contact {
+}
+
+.tr-list, .th-list, .td-list {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.th-list, .td-list {
+    border: 1px solid black;
+    text-align: justify;
+}
+
+.table-list {
+    margin: 2px auto;
+    border-collapse: collapse;
+}
+
+.th-list {
+    background-color: #ce1212;
+    color: white;
+    font-size: 14px;
+}
+
+
+.td-list {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#no.td-list {
+    font-weight: 700;
+}
+
+.tr-list:nth-child(even){
+    background-color: #c5c5c5;
+}
+
+.judul-list-contact {
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 30px;
+    text-align: center;
+}
+
+.td-list, .th-list {
+    padding: 10px;
+}
+
+.td-list>a {
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.td-list#edit>a {
+    background-color: green;
+}
+
+.td-list#delete>a {
+    background-color: #ce1212;
+}
+
+/*Edit Contact*/
+.edit-contact {
+    margin: 30px auto;
+}
+
+.judul-edit {
+    font-size: 43px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 30px 0px 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.form-edit {
+    padding: 10px;
+}
+
+.edit-form {
+    margin: 2px auto;
+}
+
+.send {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.td-edit {
+    padding: 10px;
+}
+
+.notice-tdk-ditemukan {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: gray;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-style:italic;
+    margin: auto;
+
+}
+
+/* OVERLAY */
+#ol-sert-1, #ol-sert-2, #ol-sert-3, #ol-sert-4, #ol-sert-5, #ol-sert-6 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.ol-photo-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90%;
+    transform: translate(-50%,-50%);
+}
+
+#ol-photo-ls {
+    width: 60%;
+}
+
+.img-sert {
+    cursor: pointer;
+}
+
+.video-stm-2, .video-stm-3, .video-stm-4, .video-stm-5 {
+    display: none;
+}
+
+.maps-2, .maps-3 {
+    display: none;
+}
+
+/* WEB RESPONSIVE */
+@media screen and (max-width: 1450px) {
+    .text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1385px) {
+    .a-nav .li-nav {
+        padding: 18px 60px;
+    }
+
+    .nama-logo {
+        font-size: 15px;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .a-nav .li-nav {
+        padding: 18px 60px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .home {
+        display: grid
+    }
+
+    .logo-about {
+        top: 30vh;
+    }
+
+    .about, .about-saga {
+        text-align: center;
+    }
+
+    .ul-nav .a-nav .li-nav {
+        display: none;
+    }
+
+    .sub-contact > .v1 {
+        display: none;
+    }
+    
+    .icon-bars {
+        display: block;
+        text-align: right;
+        background-color: rgb(255, 248, 219);
+        float: right;
+        margin-top: -62px;
+        width: 180vh;
+        padding: 12px 15px;
+    }
+
+    .profil {
+        display: none;
+    }
+
+    .profil-res {
+        display: block;
+    }
+
+    .table-profil {
+        margin: 55px 200px;
+    }
+
+    .th-profil {
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+
+    .about-contact {
+        display: grid;
+        justify-content: center;
+        width: 55%;
+        margin: 2px auto;
+    }
+
+    .text {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    #ol-photo-ls {
+        height: 70%;
+    }
+}
+
+@media screen and (max-width:1090px) {
+    .text {
+        font-size: 12px;
+    }
+
+    #ol-photo-ls {
+        height: 62%;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .icon-bars {
+        display: block;
+        text-align: right;
+        background-color: rgb(255, 248, 219);
+        float: right;
+        margin-top: -63px;
+        width: 180vh;
+        padding: 12px 15px;
+    }
+
+    .table-profil {
+        margin: 55px 50px;
+    }
+
+    .products {
+        padding: 50px 80px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .home {
+        margin: 20px auto;
+    }
+
+    #ol-photo-ls {
+        height: 60%;
+    }
+
+    .logo-about {
+        display: none;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .text {
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .bag-sert {
+        padding: 30px;
+    }
+
+    .isi-sert ul li {
+        padding: 25px 30px;
+    }
+    
+    .isi-sert ul li .nama-sert{
+        font-size: 25px;
+        padding: 30px;
+    }
+
+    .alamat, .no-hp {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .home {
+    }
+
+    .sub-home {
+    }
+    
+    .video-stm-1 {
+        display: none;
+    }
+    
+    .video-stm-2 {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .ul-dn {
+        grid-column-gap: 50px;
+    }
+
+    .ul-dn .li-dn {
+        padding: 40px 20px;
+        border-radius: 40px;
+    }
+
+    .ul-dn .li-dn .number-dn {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .isi-sert ul li img {
+        height: 400px;
+        box-shadow: 5px 5px 10px black;
+        transition-duration: .8s;
+    }
+    
+    .isi-sert #sert-ls{
+        height: 250px;
+    }
+
+    #ol-photo-ls {
+        height: 55%
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+    .col-md {
+        margin: 5px 5px 10px 5px;
+    }
+
+    .text {
+        font-size: 30px;
+        line-height: 33px;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .col-md {
+        margin: 15px
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .isi-about {
+        line-height: 30px;
+    }
+
+    #ol-photo-ls {
+        height: 52%
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .home {
+        margin: 60px auto;
+    }
+
+    .video-stm-2 {
+        display: none;
+    }
+
+    .video-stm-3 {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .ul-dn {
+        grid-column-gap: 30px;
+    }
+
+    .ul-dn .li-dn {
+        padding: 30px 15px;
+        border-radius: 30px;
+    }
+
+    .ul-dn .li-dn .number-dn {
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .ul-dn .li-dn .text-dn {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .isi-sert ul li img {
+        height: 350px;
+        box-shadow: 5px 5px 10px black;
+        transition-duration: .8s;
+    }
+    
+    .isi-sert #sert-ls{
+        height: 200px;
+    }
+
+    .isi-sert ul li .nama-sert{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .judul-kecil {
+        font-size: 15px;
+    }
+
+    .judul-besar {
+        font-size: 35px;
+    }
+
+    .judul-kecil, .judul-besar {
+        padding: 2px;
+    }
+    #ol-photo-ls {
+        height: 48%
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .video-stm-3 {
+        display: none;
+    }
+
+    .video-stm-4 {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .ul-dn {
+        display: none;
+    }
+
+    .isi-sert ul li img {
+        height: 300px;
+        box-shadow: 5px 5px 10px black;
+        transition-duration: .8s;
+    }
+    
+    .isi-sert #sert-ls{
+        height: 150px;
+    }
+
+    .isi-sert ul li .nama-sert{
+        font-size: 20px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+
+    .about {
+        font-size: 16px;
+    }
+    
+    .about-saga, .judul-sert {
+        font-size: 35px;
+    }
+
+    .judul-sert {
+        padding-bottom: 10px;
+    }
+
+    .isi-about {
+        font-size: 15px;
+    }
+
+    .data-nmbr {
+        padding-bottom: 0px;
+    }
+
+    .judul-sert {
+        font-size: 40px;
+    }
+
+    .isi-misi, .isi-visi {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .th-profil {
+        font-size: 33px;
+    }
+    .visi, .misi {
+        font-size: 25px;
+    }
+
+    .text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .isi-sert ul li img {
+        height: 200px;
+        box-shadow: 5px 5px 10px black;
+        transition-duration: .8s;
+    }
+
+    .ol-photo-1 {
+        height: 50%;
+    }
+
+    .maps-2{
+        display: block;
+    }
+
+    .maps-1 {
+        display: none;
+    }
+
+    .alamat, .no-hp {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .judul-list-contact {
+        font-size: 35px;
+    }
+
+    #ol-photo-ls {
+        height: 48%;
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        margin: 20px auto;
+    }
+
+    .isi-sert ul li img {
+        height: 100px;
+        box-shadow: 5px 5px 10px black;
+        transition-duration: .8s;
+    }
+
+    .ol-photo-1 {
+        height: 40%;
+    }
+
+    .judul-sert {
+        font-size: 35px;
+    }
+
+    .isi-sert #sert-ls{
+        height: 100px;
+    }
+
+    .video-stm-4 {
+        display: none;
+    }
+
+    .video-stm-5 {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .about-saga, .judul-sert {
+        font-size: 25px;
+    }
+
+    .about {
+        font-size: 13px;
+    }
+
+    .isi-sert ul li {
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer > .isi-footer {
+        font-size: 15px;
+    }
+
+    .judul-contact {
+        font-size: 35px;
+        padding: 5px;
+    }
+
+    .judul-edit {
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 20px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    #ol-photo-ls {
+        max-height: 45%;
+        max-width: 55%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #ol-photo-ls {
+        max-height: 40%;
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .isi-sert > ul > li {
+    }
+
+    .isi-sert ul li .nama-sert{
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .isi-sert ul li {
+        padding: 10px;
+    }
+
+    #ol-photo-ls {
+        max-height: 40%;
+        max-width: 70%;
+    }
+
+    .text {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .cntr-cn {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nama-logo, .a-nama-logo {
+        display: none;
+    }
+
+    .table-profil {
+        margin: 55px 25px;
+    }
+
+    .card-text {
+        line-height: 22px;
+        font-size: 15px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .products {
+        padding: 50px 40px;
+    }
+
+    .maps-2 {
+        display: none;
+    }
+
+    .maps-3 {
+        display: block;
+    }
+    /*NAVBAR BERUBAH*/
+    .icon-bars {
+        display: block;
+        text-align: right;
+        background-color: rgb(255, 248, 219);
+        float: right;
+        margin-top: -63px;
+        width: 80vh;
+        padding: 7px;
+    }
+
+    .btn {
+        margin-top: 12px;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .nvbr {
+        top: 0px;
+        position: sticky;
+        z-index: 3;
+        box-shadow: 0px 5px 25px rgb(53, 53, 53);
+    }
+    
+    .img-logo {
+        width: 35px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .div-logo {
+        height: 50px;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 248, 219);
+    }
+
+    .send {
+        font-size: 16px;
+        padding: 8px;
+        max-width: 110px;
+        background-color: #df1717;
+        border: none;
+        color: white;
+        font-weight: 700;
+        border-radius: 25px;
+        margin-bottom: 12px;
+    }
+    
+    .reset {
+        font-size: 16px;
+        padding: 8px;
+        max-width: 110px;
+        background-color: rgb(133, 133, 133);
+        border: none;
+        color: white;
+        font-weight: 700;
+        border-radius: 25px;
+        float: right;
+        cursor: pointer;
+    }
+    
+    label {
+        font-size: 18px;
+    }
+
+    #ol-photo-ls {
+        max-height: 35%;
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 435px) and (max-height : 950px) {
+    #ol-photo-ls {
+        max-height: 27%;
+        max-width: 100%;
+    }
+}
